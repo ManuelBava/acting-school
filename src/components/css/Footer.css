@@ -5,3 +5,29 @@
   font-size: 0.875rem;
   line-height: 1.5;
 }
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+}
+
+.site-footer__name {
+  max-width: 34rem;
+}
+
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-footer__nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.site-footer__nav a:hover {
+  color: var(--accent);
+}

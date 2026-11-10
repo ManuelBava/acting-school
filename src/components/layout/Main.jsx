@@ -1,18 +1,9 @@
 import '../css/Main.css'
 
-function Main() {
+function Main({ children }) {
   return (
-    <main className="site-main">
-      <section className="hero" aria-labelledby="hero-title">
-        <span className="hero__accent" aria-hidden="true"></span>
-        <h1 id="hero-title" className="hero__title">
-          The Real Purpose of Being an Artist
-        </h1>
-        <p className="hero__description">
-          A space to explore acting, develop your craft, and discover your
-          artistic voice.
-        </p>
-      </section>
+    <main id="main-content" className="site-main">
+      {children}
     </main>
   )
 }
