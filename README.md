@@ -1,16 +1,59 @@
-# React + Vite
+# Acting — The Real Purpose of Being an Artist
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A web app for an acting school: a space to explore acting, develop your craft, and discover your artistic voice.
 
-Currently, two official plugins are available:
+## Current stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React** 19 with **JavaScript** (`.jsx`, no TypeScript)
+- **Vite** for development and builds
+- **Plain CSS** (no UI libraries, no external fonts)
+- **Oxlint** for linting
+- **pnpm** as package manager
 
-## React Compiler
+Supabase is planned as the backend but is **not configured yet**. No authentication, database, or routing is set up at this stage.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project structure
 
-## Expanding the Oxlint configuration
+```
+index.html
+public/
+src/
+  assets/
+  App.jsx
+  App.css
+  index.css
+  main.jsx
+vite.config.js
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Commands
+
+Install dependencies:
+
+```bash
+pnpm install
+```
+
+Run the development server with hot reload:
+
+```bash
+pnpm dev
+```
+
+Build for production:
+
+```bash
+pnpm build
+```
+
+Preview the production build locally:
+
+```bash
+pnpm preview
+```
+
+Lint the code:
+
+```bash
+pnpm lint
+```

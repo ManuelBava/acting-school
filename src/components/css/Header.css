@@ -1,0 +1,19 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+
+.site-header__brand {
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 30rem) {
+  .site-header__brand {
+    letter-spacing: 0.3em;
+  }
+}
